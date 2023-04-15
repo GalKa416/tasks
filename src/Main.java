@@ -24,8 +24,12 @@ public class Main {
             salaryAverage += salary/30;}
         System.out.println("Средняя сумма трат за месяц составила " + salaryAverage + " рублей");
 
-
+//task 4;
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int n = reverseFullName.length - 1; n >=0; n--)
+            System.out.print(reverseFullName[n]);
     }
+
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
@@ -34,11 +38,7 @@ public class Main {
         }
         return arr;
     }
-        public static void task2 () {
-            int[] salaryArray = generateRandomArray();
-            System.out.println(Arrays.toString(salaryArray));
-            Arrays.sort(salaryArray);
-            System.out.println("Минимальная выплата " + salaryArray[0] + ", максимальная выплата " + salaryArray.length);
-        }
-    }
+}
+
+
 
