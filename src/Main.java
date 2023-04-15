@@ -12,11 +12,22 @@ public class Main {
 
         int salarySum = 0;
 
-        for (int salary: salaryArray) {
-            salarySum += salary;
-        }
+        for (int salary : salaryArray) {
+            salarySum += salary;}
+           System.out.println("Сумма трат за месяц составила " + salarySum + " рублей");
+        //task 2;
+        Arrays.sort(salaryArray);
+        System.out.println("Минимальная выплата " + salaryArray[0] + ", максимальная выплата " + salaryArray[29]);
+//task 3;
+        double salaryAverage = 0;
+        for (int salary : salaryArray) {
+            salaryAverage += salary/30;}
+        System.out.println("Средняя сумма трат за месяц составила " + salaryAverage + " рублей.");
 
-        System.out.println("Сумма трат за месяц составила " + salarySum + " рублей");
+//task 4;
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int n = reverseFullName.length - 1; n >=0; n--)
+            System.out.print(reverseFullName[n]);
     }
 
     public static int[] generateRandomArray() {
@@ -28,3 +39,6 @@ public class Main {
         return arr;
     }
 }
+
+
+
