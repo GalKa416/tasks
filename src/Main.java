@@ -18,6 +18,11 @@ public class Main {
         //task 2;
         Arrays.sort(salaryArray);
         System.out.println("Минимальная выплата " + salaryArray[0] + ", максимальная выплата " + salaryArray[29]);
+//task 3;
+        double salaryAverage = 0;
+        for (int salary : salaryArray) {
+            salaryAverage += salary/30;}
+        System.out.println("Средняя сумма трат за месяц составила " + salaryAverage + " рублей");
 
 
     }
