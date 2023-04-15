@@ -12,13 +12,15 @@ public class Main {
 
         int salarySum = 0;
 
-        for (int salary: salaryArray) {
-            salarySum += salary;
-        }
+        for (int salary : salaryArray) {
+            salarySum += salary;}
+           System.out.println("Сумма трат за месяц составила " + salarySum + " рублей");
+        //task 2;
+        Arrays.sort(salaryArray);
+        System.out.println("Минимальная выплата " + salaryArray[0] + ", максимальная выплата " + salaryArray[29]);
 
-        System.out.println("Сумма трат за месяц составила " + salarySum + " рублей");
+
     }
-
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
@@ -27,4 +29,11 @@ public class Main {
         }
         return arr;
     }
-}
+        public static void task2 () {
+            int[] salaryArray = generateRandomArray();
+            System.out.println(Arrays.toString(salaryArray));
+            Arrays.sort(salaryArray);
+            System.out.println("Минимальная выплата " + salaryArray[0] + ", максимальная выплата " + salaryArray.length);
+        }
+    }
+
