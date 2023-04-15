@@ -22,7 +22,7 @@ public class Main {
         double salaryAverage = 0;
         for (int salary : salaryArray) {
             salaryAverage += salary/30;}
-        System.out.println("Средняя сумма трат за месяц составила " + salaryAverage + " рублей");
+        System.out.println("Средняя сумма трат за месяц составила " + salaryAverage + " рублей.");
 
 //task 4;
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
